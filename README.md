@@ -7,7 +7,14 @@ Xiangyu Meng*, Zixian Zhang*, Zhenghao Zhang, Junchao Liao, Long Qin, Weizhi Wan
 
 \* equal contribution
 
+<div align="center">
+  <a href='TBD'><img src='https://img.shields.io/badge/ArXiv-TBD-red'></a>
+  <a href='https://ali-videoai.github.io/identity_page/'><img src='https://img.shields.io/badge/Project-Page-Blue'></a>
+  <a href="https://github.com/alibaba/identity-grpo"><img src='https://img.shields.io/badge/Github-Link-orange'></a>
 </div>
+
+</div>
+
 
 ## 💡 Abstract
 While advanced methods like VACE and Phantom have advanced video generation for specific subjects in diverse scenarios, they struggle with multi-human identity preservation in dynamic interactions, where consistent identities acrossmultiple characters are critical. To address this, we propose a human feedback-driven optimization pipeline for refining multi-human identity-preserving videogeneration. First, we construct a video reward model trained on a large-scale preference dataset containing human-annotated and synthetic distortion data, with pairwise annotations focused on maintaining human consistency throughout the video. We then introduce Identity-GRPO, a GRPO variant tailored for multi-human consistency, which greatly enhances both VACE and Phantom. Through extensive ablation studies, we evaluate the impact of annotation quality and design choiceson policy optimization. Experiments show that Identity-GRPO achieves up to 18.9% improvement in human consistency metrics over baseline methods, offering actionable insights for aligning reinforcement learning with personalized videogeneration. 
@@ -50,9 +57,11 @@ identity_grpo
 ```
 
 #### Download Links
-Identity-GRPO lora weights: [Link](). Unzip this finetuned lora weights in `outputs/identity_grpo/ckpt/vace/`. 
+First, you need to download `Wan-AI/Wan2.1-VACE-1.3B-diffusers` and `Qwen/Qwen2.5-VL-3B-Instruct` from huggingface.com.
 
-Identity-reward weights: [Link](). Unzip this reward weights in `outputs/identity_reward` directly. 
+Identity-GRPO lora weights: [Link](https://cloudbook-public-daily.oss-cn-hangzhou.aliyuncs.com/identity_grpo/lora_best.tgz). Unzip this finetuned lora weights in `outputs/identity_grpo/ckpt/vace/`. 
+
+Identity-reward weights: [Link](https://cloudbook-public-daily.oss-cn-hangzhou.aliyuncs.com/identity_grpo/identity_reward.tgz). Unzip this reward weights in `outputs/identity_reward` directly. 
 
 Then, you can set the pretrained model path and reward_model path in `config/dgx.py`. 
 
@@ -98,7 +107,7 @@ Using the provided configuration, the resulting ID-Consistency reward curves of 
   <!-- width="350" -->
 </p>
 
-All videos are available in this [Link待定]()
+All videos are available in this [Link](https://ali-videoai.github.io/identity_page)
 
 ## 🤝 Acknowledgements
 
@@ -113,5 +122,5 @@ This repo is based [Flow-GRPO](https://github.com/yifan123/flow_grpo), [VideoAli
 ## ⭐Citation
 If you find Identity-GRPO useful for your research or projects, we would greatly appreciate it if you could cite the following paper:
 ```
-待定
+TBD
 ```
