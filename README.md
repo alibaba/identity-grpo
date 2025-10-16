@@ -24,7 +24,7 @@ While advanced methods like VACE and Phantom have advanced video generation for 
 ### 1. 🐍 Environment Set Up
 Clone this repository and install packages.
 ```bash
-git clone xxx
+git clone https://github.com/alibaba/identity-grpo.git
 cd identity_grpo
 conda create -n vace_grpo python=3.10.16
 conda activate vace_grpo
