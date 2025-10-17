@@ -180,7 +180,7 @@ class VideoVLMRewardInference():
         batch = self._prepare_inputs(batch)
         return batch
 
-    def __call__(self, ref_paths, video_paths, prompts="", fps=None, num_frames=None, max_pixels=None, use_norm=True):
+    def __call__(self, ref_paths, video_paths, prompts="", fps=None, num_frames=None, max_pixels=None, use_norm=False):
         """
         Inputs:
             video_paths: List[str], B paths of the videos.

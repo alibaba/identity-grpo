@@ -8,7 +8,7 @@ Xiangyu Meng*, Zixian Zhang*, Zhenghao Zhang, Junchao Liao, Long Qin, Weizhi Wan
 \* equal contribution
 
 <div align="center">
-  <a href='TBD'><img src='https://img.shields.io/badge/ArXiv-TBD-red'></a>
+  <a href='https://arxiv.org/abs/2510.14256'><img src='https://img.shields.io/badge/ArXiv-2510.14256-red'></a>
   <a href='https://ali-videoai.github.io/identity_page/'><img src='https://img.shields.io/badge/Project-Page-Blue'></a>
   <a href="https://github.com/alibaba/identity-grpo"><img src='https://img.shields.io/badge/Github-Link-orange'></a>
 </div>
@@ -84,7 +84,10 @@ Then run the scripts:
 accelerate launch --config_file scripts/accelerate_configs/multi_gpu.yaml --num_processes=1 --main_process_port 29501 test_wan2_1_vace.py --config config/dgx.py:vace
 ```
 
-You can refer to [scripts/single_node/test.sh](scripts/single_node/test.sh).
+You can refer to [scripts/single_node/test.sh](scripts/single_node/test.sh) for more configuration parameters.
+
+#### 4.1. Identity-Reward Inference
+If you only need to use the Identity-Reward model, you can refer to [vace_reward/inference.py](vace_reward/inference.py) .
 
 ### 5. 🧠 Training
 You can prepare the training data in `dataset/generated_img/train.csv`, and set the dataset path in `config/dgx.py`. 
@@ -94,7 +97,7 @@ Then run the scripts:
 CUDA_VISIBLE_DEVICES=0,1,2,3,4,5,6,7 accelerate launch --config_file scripts/accelerate_configs/multi_gpu.yaml --num_processes=8 --main_process_port 29502 train_wan2_1_vace.py --config config/dgx.py:vace
 ```
 
-You can refer to [scripts/single_node/train.sh](scripts/single_node/train.sh). Other training configuration can be found in `config/dgx.py`.
+You can refer to [scripts/single_node/train.sh](scripts/single_node/train.sh). More training configuration can be found in `config/dgx.py`.
 
 Using the provided configuration, the resulting ID-Consistency reward curves of Identity-GRPO on VACE-1.3B and Phantom-1.3B are shown below. Both exhibit a clear upward trend. 
 <p align="center">
@@ -122,5 +125,13 @@ This repo is based [Flow-GRPO](https://github.com/yifan123/flow_grpo), [VideoAli
 ## ⭐Citation
 If you find Identity-GRPO useful for your research or projects, we would greatly appreciate it if you could cite the following paper:
 ```
-TBD
+@misc{meng2025identitygrpooptimizingmultihumanidentitypreserving,
+      title={Identity-GRPO: Optimizing Multi-Human Identity-preserving Video Generation via Reinforcement Learning}, 
+      author={Xiangyu Meng and Zixian Zhang and Zhenghao Zhang and Junchao Liao and Long Qin and Weizhi Wang},
+      year={2025},
+      eprint={2510.14256},
+      archivePrefix={arXiv},
+      primaryClass={cs.CV},
+      url={https://arxiv.org/abs/2510.14256}, 
+}
 ```
