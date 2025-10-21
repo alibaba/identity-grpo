@@ -125,13 +125,10 @@ This repo is based [Flow-GRPO](https://github.com/yifan123/flow_grpo), [VideoAli
 ## ⭐Citation
 If you find Identity-GRPO useful for your research or projects, we would greatly appreciate it if you could cite the following paper:
 ```
-@misc{meng2025identitygrpooptimizingmultihumanidentitypreserving,
-      title={Identity-GRPO: Optimizing Multi-Human Identity-preserving Video Generation via Reinforcement Learning}, 
-      author={Xiangyu Meng and Zixian Zhang and Zhenghao Zhang and Junchao Liao and Long Qin and Weizhi Wang},
-      year={2025},
-      eprint={2510.14256},
-      archivePrefix={arXiv},
-      primaryClass={cs.CV},
-      url={https://arxiv.org/abs/2510.14256}, 
+@article{meng2025identity,
+  title={Identity-GRPO: Optimizing Multi-Human Identity-preserving Video Generation via Reinforcement Learning},
+  author={Meng, Xiangyu and Zhang, Zixian and Zhang, Zhenghao and Liao, Junchao and Qin, Long and Wang, Weizhi},
+  journal={arXiv preprint arXiv:2510.14256},
+  year={2025}
 }
 ```
