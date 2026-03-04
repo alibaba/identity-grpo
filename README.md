@@ -3,7 +3,7 @@ Identity-preserving Video Generation via
 Reinforcement Learning </h1>
 
 <div align="center">
-Xiangyu Meng*, Zixian Zhang*, Zhenghao Zhang, Junchao Liao, Long Qin, Weizhi Wang
+Xiangyu Meng*, Zixian Zhang*, Zhenghao Zhang†, Junchao Liao, Long Qin, Weizhi Wang
 
 \* equal contribution
 
@@ -117,9 +117,10 @@ All videos are available in this [Link](https://ali-videoai.github.io/identity_p
 This repo is based [Flow-GRPO](https://github.com/yifan123/flow_grpo), [VideoAlign](https://github.com/KwaiVGI/VideoAlign), [Wan2.1](https://github.com/Wan-Video/Wan2.1), [VACE](https://github.com/ali-vilab/VACE) and [Phantom](https://github.com/Phantom-video/Phantom). We thank the authors for their valuable contributions to the AIGC community. 
 
 ## 📄 Our previous work
-- [Tora2: Motion and Appearance Customized Diffusion Transformer for Multi-Entity Video Generation](https://ali-videoai.github.io/Tora2_page/)
+- [Tora2: Motion and Appearance Customized Diffusion Transformer for Multi-Entity Video Generation(ACM MM25)](https://ali-videoai.github.io/Tora2_page/)
 - [Tora: Trajectory-oriented Diffusion Transformer for Video Generation [CVPR 2025]](https://github.com/alibaba/Tora)
 - [AnimateAnything: Fine Grained Open Domain Image Animation with Motion Guidance](https://github.com/alibaba/animate-anything)
+- [LaTo: Landmark-tokenized Diffusion Transformer for Fine-grained Human Face Editing [ICLR 2026]](https://github.com/alibaba/landmark-tokenized-dit)
 
 
 ## ⭐Citation
